@@ -28,6 +28,7 @@
 }
 body {
   background: var(--outgoing-chat-bg);
+  overflow-x: hidden;
 }
 
 /* Chats container styling */
@@ -121,7 +122,7 @@ span.material-symbols-rounded {
   align-self: flex-start;
   object-fit: cover;
   border-radius: 55px;
-  content: url(/Avatar\ 0.1.png);
+  content: url(https://media.discordapp.net/attachments/1134429684973707324/1178144286877950053/OIG.png?ex=6575135e&is=65629e5e&hm=e0a382619b5a8f093641038e06fd48c7bcfda5d673d9bcb5167b71fd87a7f8c5&=&format=webp&width=297&height=297);
 
 }
 
@@ -140,7 +141,7 @@ span.material-symbols-rounded {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  content: url(/Avatar\ 0.1.png);
+  content: url(https://media.discordapp.net/attachments/1134429684973707324/1178144286877950053/OIG.png?ex=6575135e&is=65629e5e&hm=e0a382619b5a8f093641038e06fd48c7bcfda5d673d9bcb5167b71fd87a7f8c5&=&format=webp&width=297&height=297);
   justify-content: center;
   background-color: #141515;
 }
