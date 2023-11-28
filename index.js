@@ -5,7 +5,7 @@ const themeButton = document.querySelector("#theme-btn");
 const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 
 const loadDataFromLocalstorage = () => {
     // Load saved chats and theme from local storage and apply/add on the page
@@ -40,7 +40,7 @@ const getChatResponse = async (incomingChatDiv) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`
+            "Authorization": `Bearer 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`
         },
         body: JSON.stringify({
             model: "text-davinci-003",
