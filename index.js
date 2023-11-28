@@ -81,7 +81,7 @@ const showTypingAnimation = () => {
     // Display the typing animation and call the getChatResponse function
     const html = `<div class="chat-content">
                     <div class="chat-details">
-                        <img src="https://media.discordapp.net/attachments/1148673347392127046/1178448186763923547/imagen_2023-11-26_222317809_waifu2x_photo_noise3_scale.png?ex=65762e66&is=6563b966&hm=eb15638ae46f267d6fc14823f54990815d73bccb1632d8537def78d8d3b9843a&=&format=webp&width=671&height=671">
+                        <img id="chatbot-img">
                         <div class="typing-animation">
                             <div class="typing-dot" style="--delay: 0.2s"></div>
                             <div class="typing-dot" style="--delay: 0.3s"></div>
@@ -107,7 +107,7 @@ const handleOutgoingChat = () => {
 
     const html = `<div class="chat-content">
                     <div class="chat-details">
-                        <img src="https://media.discordapp.net/attachments/1134429684973707324/1178144286877950053/OIG.png?ex=6575135e&is=65629e5e&hm=e0a382619b5a8f093641038e06fd48c7bcfda5d673d9bcb5167b71fd87a7f8c5&=&format=webp&width=297&height=297">
+                        <img id="user-img">
                         <p>${userText}</p>
                     </div>
                 </div>`;
