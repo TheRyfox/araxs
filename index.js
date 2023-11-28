@@ -5,13 +5,7 @@ const themeButton = document.querySelector("#theme-btn");
 const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
-const keyInput = document.getElementById("keyInput");
-const API_KEY = "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";
-
-const button = document.getElementById("keyInput");
-button.addEventListener("click", () => {
-    API_KEY = keyInput.value.trim();
-});
+const API_KEY = "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"; // Paste your API key here
 
 const loadDataFromLocalstorage = () => {
     // Load saved chats and theme from local storage and apply/add on the page
@@ -20,10 +14,11 @@ const loadDataFromLocalstorage = () => {
     document.body.classList.toggle("light-mode", themeColor === "light_mode");
     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
-    const defaultText = `<div class="default-text">
-                            <h1>Araxs IA</h1>
-                            <p>Comienza una conversación y explora el poder de la IA<br> Tu historial de chat se mostrará aquí.</p>
-                        </div>`
+    const defaultText = 
+    `<div class="default-text">
+    <h1>ChatGPT Clone</h1>
+    <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+</div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
     chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to bottom of the chat container
@@ -64,7 +59,7 @@ const getChatResponse = async (incomingChatDiv) => {
         pElement.textContent = response.choices[0].text.trim();
     } catch (error) { // Add error class to the paragraph element and set error text
         pElement.classList.add("error");
-        pElement.textContent = "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo.";
+        pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
     }
 
     // Remove the typing animation, append the paragraph element and save the chats to local storage
@@ -86,7 +81,7 @@ const showTypingAnimation = () => {
     // Display the typing animation and call the getChatResponse function
     const html = `<div class="chat-content">
                     <div class="chat-details">
-                    <img id="chatbot-img">
+                        <img src="images/chatbot.jpg" alt="chatbot-img">
                         <div class="typing-animation">
                             <div class="typing-dot" style="--delay: 0.2s"></div>
                             <div class="typing-dot" style="--delay: 0.3s"></div>
@@ -112,7 +107,7 @@ const handleOutgoingChat = () => {
 
     const html = `<div class="chat-content">
                     <div class="chat-details">
-                    <img id="user-img">
+                        <img src="images/user.jpg" alt="user-img">
                         <p>${userText}</p>
                     </div>
                 </div>`;
