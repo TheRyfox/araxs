@@ -247,6 +247,35 @@ span.material-symbols-rounded {
   font-size: 20px;
 }
 
+
+.h3-ajuste5 {
+  position: relative;
+  z-index: 999;
+  color: #188569;
+  left: 5%;
+  top: 30%;
+  background-color: transparent;
+}
+
+.panel-key {
+  position: relative;
+  z-index: 999;
+  background-color: #141515;
+  width: 335px;
+  height: 33px;
+  left: 4%;
+  border-radius: 20px;
+  top: 33%;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #188569;
+  outline: none;
+  text-align: left;
+  padding-left: 10px;
+  color: #ACACBE;
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -460,10 +489,10 @@ input:checked + .slider:before {
     position: relative;
     z-index: 999;
     background-color: #141515;
-    width: 375px;
+    width: 335px;
     height: 33px;
     left: 4%;
-    border-radius: 5px;
+    border-radius: 20px;
     top: 33%;
     font-size: 16px;
     display: flex;
